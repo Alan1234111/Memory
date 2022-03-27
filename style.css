@@ -1,0 +1,54 @@
+:root {
+  --number-of-cols: 6;
+  --number-of-rows: 6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .level {
+  height: 10vh;
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+.level p {
+  position: relative;
+  left: 50%;
+  transform: translateX(-3%);
+}
+
+.level button {
+  width: 33%;
+  height: 70%;
+} */
+
+.memoryboard {
+  display: grid;
+  grid-template-columns: repeat(var(--number-of-cols), 1fr);
+  grid-template-rows: repeat(var(--number-of-rows), 1fr);
+  grid-gap: 20px;
+  background-color: black;
+
+  width: 100vw;
+  height: 90vh;
+}
+.memoryboard div {
+  opacity: 1;
+  border: 1px solid wheat;
+}
+
+div.reveal {
+  opacity: 1;
+}
+
+div.hide {
+  opacity: 0;
+}
+
+div.win {
+  opacity: 1;
+}
